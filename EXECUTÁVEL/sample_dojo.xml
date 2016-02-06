@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project simple-project">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <target name="create_run_jar">
+        <jar destfile="/home/dsbonafe/temp/pre_dojo.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="br.sp.saopaulo.view.Programa"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="/home/dsbonafe/temp/Eclipse/workspace/simple-project/bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="/usr/share/eclipse/dropins/jdt/plugins/org.junit_4.8.2.dist/junit.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/usr/share/eclipse/dropins/jdt/plugins/org.hamcrest.core_1.3.0.jar"/>
+        </jar>
+    </target>
+</project>
